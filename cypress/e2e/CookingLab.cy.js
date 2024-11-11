@@ -15,6 +15,8 @@ describe('Cooking Lab flow tests', () => {
     cy.get('[data-testid="intro-objective"]').should('exist');
     cy.get('[data-testid="get-started-btn"]').should('exist');
     cy.get('[data-testid="footer-copyright"]').should('exist');
+    cy.get('[data-testid="footer-power"]').should('exist');
+    cy.get('[data-testid="footer-power-link"]').should('exist');
     cy.get('[data-testid="tm-id"]').should('exist');
     cy.get('[data-testid="tc-id"]').should('exist');
 
