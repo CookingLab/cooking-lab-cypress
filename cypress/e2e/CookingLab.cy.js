@@ -25,7 +25,7 @@ describe('Cooking Lab flow tests', () => {
     cy.get('[data-testid="step1-title"]').should('exist');
     cy.get('[data-testid="step1-description"]').should('exist');
     STEP1_CUISINES.forEach(cuisine => {
-      cy.get('button').contains(cuisine).should('be.visible');
+      cy.get('button').contains(cuisine.charAt(0).toUpperCase() + cuisine.slice(1).toLowerCase()).should('be.visible');
     });
     cy.get('button').contains(STEP1_RANDOM).should('be.visible');
 
@@ -61,7 +61,7 @@ describe('Cooking Lab flow tests', () => {
     cy.get('.bi-arrow-left-circle-fill').should('exist');
     cy.get('.dropdown-toggle').click();
     cy.get('.dropdown-item').first().click();
-    cy.get('.list-group').contains('balanced');
+    cy.get('.list-group').contains('Balanced');
     cy.get('[data-testid="cypress-clear-btn"]').should('exist');
     cy.get('[data-testid="cypress-clear-btn"]').click();
     cy.get('.list-group').children().should('have.length', 0);
