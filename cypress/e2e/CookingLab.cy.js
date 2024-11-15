@@ -19,6 +19,7 @@ describe('Cooking Lab flow tests', () => {
     cy.get('[data-testid="footer-power-link"]').should('exist');
     cy.get('[data-testid="tm-id"]').should('exist');
     cy.get('[data-testid="tc-id"]').should('exist');
+    cy.get('[data-testid="quick-recipe-btn"]').should('exist');
 
     //Step1
     cy.get('[data-testid="get-started-btn"]').should('exist').click();
@@ -109,6 +110,8 @@ describe('Cooking Lab flow tests', () => {
     cy.get('[data-testid="recipe-ingredient"]').should('exist');
     cy.get('[data-testid="recipe-ingredient-list"]').should('exist');
     cy.get('[data-testid="recipe-link"]').should('exist');
+    cy.get('[data-testid="back-icon"]').should('exist');
+    cy.get('[data-testid="regenerate-btn"]').should('exist');
 
     //Restart
     cy.get('[data-testid="cypress-restart-btn"]').should('exist');
