@@ -6,6 +6,7 @@ export const COOKING_LAB_OBJECTIVE = 'Our objective is to help you find a recipe
 export const HOME_GET_STARTED_BTN = 'Get started!';
 export const RESTART = 'Restart';
 export const CLEAR = 'Clear';
+export const QUICK_RECIPE = 'Quick Recipe';
 
 // Debug constants
 export const DEBUG = 'Debug Tool';
@@ -55,18 +56,20 @@ export const MEAL_TYPES = [
   { type: 'snack', label: STEP2_SNACK },
   { type: 'teatime', label: STEP2_TEATIME },
 ];
+export const MEAT_DROPDOWN = 'Choose a protein (optional)';
+export const MEAT_VALUES = ['Chicken', 'Pork', 'Beef', 'Fish'];
 
 // Step3 constants
 export const STEP3_TITLE = 'Step 3: Select Diet(s)';
 export const STEP_OPTIONAL = '(This step is optional)';
-export const STEP3_SELECT_LABEL = 'Choose one or many diets: ';
+export const STEP3_SELECT_LABEL = 'Choose one or many diets:';
 export const STEP3_DROPDOWN = 'Diets';
 export const STEP3_DIETS = ['balanced', 'high-fiber', 'high-protein', 'low-carb', 'low-fat', 'low-sodium'];
 
 // Step4 constants
 export const STEP4_TITLE = 'Step 4: Select Food Restrictions';
 export const STEP4_DESCRIPTION = 'Do you have any food restrictions? (This step is optional)';
-export const STEP4_DROPDOWN = 'Choose one or many allergies or restrictions: ';
+export const STEP4_DROPDOWN = 'Choose one or many allergies or restrictions:';
 export const STEP4_DROPDOWN_ALLERGIES = 'Allergies';
 export const STEP4_DROPDOWN_RESTRICTIONS = 'Restrictions';
 export const STEP4_ALLERGIES = [
@@ -92,6 +95,7 @@ export const SUMMARY_STEP4 = 'Step 4';
 export const SUMMARY_GET_RECIPE = 'Get Recipe';
 export const SUMMARY_STEP1_LABEL = 'Selected cuisine: ';
 export const SUMMARY_STEP2_LABEL = 'Selected meal type: ';
+export const SUMMARY_STEP2_LABEL_MEAT = 'Selected protein: ';
 export const SUMMARY_STEP3_LABEL = 'Selected diets: ';
 export const SUMMARY_STEP4_LABEL = 'Selected food restrictions: ';
 export const SUMMARY_EDIT = 'Edit';
@@ -104,3 +108,4 @@ export const RECIPE_LOADER = 'Loading Recipe';
 export const RECIPE_ERROR_TITLE = 'Error fetching recipe';
 export const RECIPE_ERROR_MESSAGE = 'It looks like there was an error fetching the recipe. Please try again later.';
 export const RECIPE_ERROR_SUB_MESSAGE = 'Click the back button to change your selections.';
+export const RECIPE_GENERATE = 'Generate another recipe';

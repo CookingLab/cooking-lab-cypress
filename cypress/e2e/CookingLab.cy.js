@@ -51,6 +51,9 @@ describe('Cooking Lab flow tests', () => {
     cy.get('.bi-arrow-left-circle-fill').should('exist');
     cy.get('.meal-type-btn').first().click();
     cy.get('.bi-arrow-right-circle-fill').should('exist');
+    cy.get('[data-testid="cypress-meat-dropdown"]').should('not.exist');
+    cy.contains('.meal-type-btn', 'Lunch').click();
+    cy.get('[data-testid="cypress-meat-dropdown"]').should('exist');
 
     //Step3
     cy.get('.bi-arrow-right-circle-fill').click();
