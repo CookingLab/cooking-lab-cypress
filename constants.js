@@ -23,6 +23,10 @@ export const ENDPOINT_SELECTOR = 'Backend endpoint';
 export const LOCAL = 'Local';
 export const PROD = 'Prod';
 
+// NavBar constants
+export const RECIPE_GENERATOR = 'Recipe generator';
+export const PERSONAL_RECIPE = 'See our recipes';
+
 // Footer constants
 export const COPYRIGHT = '© Copyright 2024 Cooking Lab - ALL RIGHTS RESERVED';
 export const TML = 'The Minh Luong';
@@ -48,6 +52,7 @@ export const STEP2_LUNCH = 'Lunch';
 export const STEP2_DINNER = 'Dinner';
 export const STEP2_SNACK = 'Snack';
 export const STEP2_TEATIME = 'Teatime';
+export const DESSERT = 'Desserts';
 export const MEAL_TYPES = [
   { type: 'breakfast', label: STEP2_BREAKFAST },
   { type: 'brunch', label: STEP2_BRUNCH },
@@ -55,6 +60,7 @@ export const MEAL_TYPES = [
   { type: 'dinner', label: STEP2_DINNER },
   { type: 'snack', label: STEP2_SNACK },
   { type: 'teatime', label: STEP2_TEATIME },
+  { type: 'desserts', label: DESSERT }
 ];
 export const MEAT_DROPDOWN = 'Choose a protein (optional)';
 export const MEAT_VALUES = ['Chicken', 'Pork', 'Beef', 'Fish'];
@@ -105,7 +111,15 @@ export const SUMMARY_NONE = 'Not selected';
 export const RECIPE_INGREDIENT = 'Ingredients';
 export const RECIPE_LINK = 'Recipe here:';
 export const RECIPE_LOADER = 'Loading Recipe';
+export const RECIPE_LOADING = 'Loading...';
 export const RECIPE_ERROR_TITLE = 'Error fetching recipe';
 export const RECIPE_ERROR_MESSAGE = 'It looks like there was an error fetching the recipe. Please try again later.';
 export const RECIPE_ERROR_SUB_MESSAGE = 'Click the back button to change your selections.';
 export const RECIPE_GENERATE = 'Generate another recipe';
+
+// PersonalRecipes constants
+export const PERSONAL_RECIPES_TITLE = 'Our Recipes';
+export const PERSONAL_RECIPES_MSG = 'Check out our recipes below! Click on a recipe to view more details.';
+export const TC_RECIPE = 'Tien\'s Recipes';
+export const TM_RECIPE = 'The Minh\'s Recipes';
+export const RECIPE_INSTRUCTIONS = 'Instructions';
